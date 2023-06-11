@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Особые услуги для истинных ценителей</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Фоновое изображение -->
+  <div class="background-image"></div>
+  
+  <!-- Контейнер для содержимого -->
+  <div class="container">
+    <h1>Горячие Фантазии</h1>
+    <p>Ваши фантазии + Наши ресурсы</p>
+    
+    <!-- Кнопка для открытия модального окна -->
+    <button id="changeContent">Вход в Рай</button>
+    
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form>
+          <p>Введите имя пользователя и пароль:</p>
+          <label for="username">Имя пользователя:</label>
+          <input type="text" id="username" name="username" placeholder="Введите имя пользователя" /><br /><br />
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" name="password" placeholder="Введите пароль" /><br /><br />
+          <input type="submit" value="OK" id="submit" />
+          <button type="button" class="cancel">Отмена</button>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Показывает введенные данные пользователя -->
+    <p id="credentialsDisplay"></p>
+  </div>
+  
+  <!-- Аудио-элемент для воспроизведения звука -->
+  <audio id="myAudio" src="Tongue.mp3"></audio>
+  
+  <!-- Скрипт для обработки событий -->
+  <script src="main.js"></script>
+</body>
+
+</html>
